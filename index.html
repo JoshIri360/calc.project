@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
     <title>CALCULATOR</title>
   </head>
@@ -12,25 +12,26 @@
       <div class="display">
         <input type="text" name="" id="inpt">
       </div>
-      <button type="button" class="num-btn" id="ac" onclick="" name="button">AC</button>
+      <button type="button" class="num-btn" id="ac" onclick="allClear" name="button">AC</button>
       <button type="button" class="num-btn" id="seven" onclick="addEl(7)" name="button">7</button>
       <button type="button" class="num-btn" id="eight" onclick="addEl(8)" name="button">8</button>
       <button type="button" class="num-btn" id="nine" onclick="addEl(9)" name="button">9</button>
-      <button type="button" class="num-btn" id="pow" onclick="addEl(+)" name="button">+</button>
-      <button type="button" class="num-btn" id="plus" onclick="addEl(**)" name="button">^</button>
+      <button type="button" class="num-btn" id="pow" onclick="addEl('+')" name="button">+</button>
+      <button type="button" class="num-btn" id="clear" onclick="clr()" name="button">C</button>
+      <!-- <button type="button" class="num-btn" id="plus" onclick="addEl('**')" name="button">^</button> -->
       <button type="button" class="num-btn" id="four" onclick="addEl(4)" name="button">4</button>
-      <button type="button" class="num-btn" id="five" name="button">5</button>
-      <button type="button" class="num-btn" id="ans" name="button">6</button>
-      <button type="button" class="num-btn" id="six" name="button">-</button>
-      <button type="button" class="num-btn" id="star" name="button">C</button>
-      <button type="button" class="num-btn" id="minus" name="button">1</button>
-      <button type="button" class="num-btn" id="one" name="button">2</button>
-      <button type="button" class="num-btn" id="two" name="button">3</button>
-      <button type="button" class="num-btn" id="three" name="button">*</button>
-      <button type="button" class="num-btn" id="zero" name="button">0</button>
-      <button type="button" class="num-btn" id="point" name="button">.</button>
-      <button type="button" class="num-btn" id="divi" name="button">/</button>
-      <button type="button" class="num-btn" id="equal" name="button">=</button>
+      <button type="button" class="num-btn" id="five" onclick="addEl(5)" name="button">5</button>
+      <button type="button" class="num-btn" id="six" onclick="addEl(6)" name="button">6</button>
+      <button type="button" class="num-btn" id="minus" onclick="addEl('-')" name="button">-</button>
+      <button type="button" class="num-btn" id="divi" onclick="addEl('/')" name="button">/</button>
+      <button type="button" class="num-btn" id="one" onclick="addEl(1)" name="button">1</button>
+      <button type="button" class="num-btn" id="two" onclick="addEl(2)" name="button">2</button>
+      <button type="button" class="num-btn" id="three" onclick="addEl(3)" name="button">3</button>
+      <button type="button" class="num-btn" id="star" onclick="addEl('*')" name="button">*</button>
+      <button type="button" class="num-btn" id="ans" onclick="ans1()" name="button">ANS</button>
+      <button type="button" class="num-btn" id="zero" onclick='addEl(0)' name="button">0</button>
+      <button type="button" class="num-btn" id="point" onclick="addEl('.')" name="button">.</button>
+      <button type="button" class="num-btn" id="equal" onclick="eq()" name="button">=</button>
     </div>
     <script type="text/javascript" src="script.js"></script>
   </body>
